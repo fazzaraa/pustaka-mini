@@ -1,0 +1,11 @@
+.git
+vendor
+node_modules
+.env
+tests
+*.sqlite
+storage/logs/*
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+bootstrap/cache/*.php
