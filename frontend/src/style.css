@@ -1,0 +1,38 @@
+:root {
+  --bg: #f6f1e7;
+  --card: #fffdf8;
+  --ink: #2b2118;
+  --muted: #7a6c5d;
+  --accent: #8a4b2a;
+  --line: #e4d9c7;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+.topbar { display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; background: var(--accent); color: #fff; }
+.topbar h1 { margin: 0; font-size: 1.25rem; }
+.container { max-width: 720px; margin: 24px auto; padding: 0 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
+.narrow { max-width: 380px; margin: 40px auto; }
+form { display: flex; flex-direction: column; gap: 10px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.grid textarea, .grid .error, .grid .actions { grid-column: 1 / -1; }
+input, select, textarea { padding: 9px; border: 1px solid var(--line); border-radius: 6px; font: inherit; background: #fff; }
+button { padding: 9px 16px; border: 0; border-radius: 6px; background: var(--accent); color: #fff; font: inherit; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+button.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.topbar .ghost { color: #fff; border-color: #fff; }
+button.danger { color: #b3261e; border-color: #b3261e; }
+.actions { display: flex; gap: 8px; }
+.tabs { display: flex; gap: 8px; margin: 16px 0; flex-wrap: wrap; }
+.tabs button { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.tabs button.active { background: var(--ink); color: #fff; }
+.list { list-style: none; padding: 0; margin: 0; }
+.book { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.badge { font-size: .75rem; padding: 2px 8px; border-radius: 999px; background: var(--line); margin-right: 8px; }
+.badge.reading { background: #ffe6a8; }
+.badge.done { background: #c9e8c4; }
+.stars { color: #d4a017; }
+.muted { color: var(--muted); }
+.error { color: #b3261e; margin: 0; }
+.switch { text-align: center; }
+@media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
