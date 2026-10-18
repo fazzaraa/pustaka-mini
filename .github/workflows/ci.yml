@@ -75,7 +75,7 @@ jobs:
           context: frontend
           push: true
           build-args: |
-            VITE_API_URL=http://localhost:8000/api
+            VITE_API_URL=/api
           tags: |
             ghcr.io/${{ github.repository }}-frontend:latest
             ghcr.io/${{ github.repository }}-frontend:${{ github.sha }}
