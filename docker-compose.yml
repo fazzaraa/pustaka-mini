@@ -50,7 +50,7 @@ services:
     build:
       context: ./frontend
       args:
-        VITE_API_URL: http://localhost:8000/api
+        VITE_API_URL: /api
     image: pustaka-frontend:1.0
     restart: unless-stopped
     depends_on:
