@@ -54,3 +54,4 @@ php artisan test
 - Branch: `main` (dilindungi), `dev`, dan branch fitur (`feat/...`)
 - Perubahan ke `main` hanya lewat Pull Request dengan dua status check wajib lulus
 - Workflow `.github/workflows/ci.yml`: job `backend-test` dan `frontend-build`, lalu `publish-images` (hanya pada push ke `main`) yang membangun dan mengunggah image ke ghcr.io
+Repository: uts-pl-24-542303-sv-25029
